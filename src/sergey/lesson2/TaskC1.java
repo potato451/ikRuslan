@@ -29,7 +29,7 @@ import java.util.Scanner;
 За май начислено $3000.0
 За июнь начислено $2000.0
 За июль начислено $2000.0
-За август начислено $2000.0
+За июль начислено $2000.0
 За сентябрь начислено $3000.0
 За октябрь начислено $3000.0
 За ноябрь начислено $3000.0
@@ -39,26 +39,6 @@ import java.util.Scanner;
 
 */
 public class TaskC1 {
-    public static void main(String[] args){
-        String b="январь";
-        System.out.println("Какую вы хотите зарплату в $$$?");
-        Scanner sc = new Scanner(System.in);
-        int money = sc.nextInt();
-        int month = 0;
-        if (money>300 || money<3000){
-            System.out.println("Мы вам перезвоним!");
-        }
-        else {
-            while (month<0){
-                if (month<=0 || month>=13){
-                    System.out.println("За месяц " + month + " начислено $0.0");
-                }
-                else if (month>=1 && month<6 || month>=9 && month<13){
-                    System.out.println();
-                }
-        }
-        }
-    }
 
 
 }

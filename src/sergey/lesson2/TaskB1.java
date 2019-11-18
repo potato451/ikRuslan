@@ -1,5 +1,7 @@
 package sergey.lesson2;
 
+import java.util.Scanner;
+
 /*
 Определите количество дней в году
 
