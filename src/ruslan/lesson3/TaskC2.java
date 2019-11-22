@@ -1,4 +1,5 @@
 package ruslan.lesson3;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -22,10 +23,19 @@ package ruslan.lesson3;
 public class TaskC2 {
 
 
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
-
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+    private static int sumDigitsInNumber(int i) {
+//        int b = 0;
+//        while (i > 10) {
+//            int a = i % 10;
+//            b += a;
+//            i /= 10;
+//        }
+//        b += i;
+        return 20;
+    }
 
 }

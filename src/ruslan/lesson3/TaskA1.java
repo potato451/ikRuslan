@@ -36,17 +36,17 @@ Scanner sc=new Scanner(System.in);
 import java.util.Scanner;
 
 class TaskA1 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int c1 = a+b;
-        int c2 = a-b;
-        int c3 = a*b;
-        int c4 = a/b;
-        int c5 =a%b;
-        System.out.println(c1 + " " + c2 + " " + c3 + " " +c4 + " " +c5);
-        System.out.println((double)c1 + " " + (double)c2 + " " + (double)c3 + " " +((double)c4 + 0.5)  + " " +(double)c5);
+        int c1 = a + b;
+        int c2 = a - b;
+        int c3 = a * b;
+        int c4 = a / b;
+        int c5 = a % b;
+        System.out.println(c1 + " " + c2 + " " + c3 + " " + c4 + " " + c5);
+        System.out.println((double) c1 + " " + (double) c2 + " " + (double) c3 + " " + ((double) c4 + 0.5) + " " + (double) c5);
     }
 
 

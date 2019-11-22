@@ -41,7 +41,6 @@ public class TaskB2 {
                 if (i == size) {
                     System.out.println(" ");
                 }
-                c= c +size;
             }
             c++;
         }
