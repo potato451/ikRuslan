@@ -23,10 +23,13 @@ float f - присваивание в десятичном формате
 Для автоматической проверки откройте и запустите класс Testing
 */
 
+import java.util.Scanner;
+
 strictfp class TaskB1 {
     public static  void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         double d = 0;
-        double b = 0;
+        byte b = 0;
         double o = 0;
         double h = 0;
         double f = 0;

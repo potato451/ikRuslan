@@ -24,5 +24,40 @@ package ruslan.lesson2;
 */
 
 public class TaskC3 {
+    public static void main(String[] args) {
+        int a = 0;
+        while (a < 10) {
+            a++;
+            switch (a) {
+                case 1:
+                    System.out.println("два умножить на два равно четыре");
+                    break;
+                case 2:
+                    System.out.println("два умножить на три равно шесть");
+                    break;
+                case 3:
+                    System.out.println("два умножить на четыре равно восемь");
+                    break;
+                case 4:
+                    System.out.println("два умножить на пять равно десять");
+                    break;
+                case 5:
+                    System.out.println("два умножить на шесть равно двенадцать");
+                    break;
+                case 6:
+                    System.out.println("два умножить на семь равно четырнадцать");
+                    break;
+                case 7:
+                    System.out.println("два умножить на восемь равно шестнадцать");
+                    break;
+                case 8:
+                    System.out.println("два умножить на девять равно восемнадцать");
+                    break;
+                case 9:
+                    System.out.println("два умножить на десять равно двадцать");
+                    break;
+            }
+        }
+    }
 
 }
