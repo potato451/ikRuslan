@@ -28,14 +28,14 @@ public class TaskC2 {
     }
 
     private static int sumDigitsInNumber(int i) {
-//        int b = 0;
-//        while (i > 10) {
-//            int a = i % 10;
-//            b += a;
-//            i /= 10;
-//        }
-//        b += i;
-        return 20;
+        int b = 0;
+        while (i > 10) {
+            int a = i % 10;
+            b += a;
+            i /= 10;
+        }
+        b += i;
+        return b;
     }
 
 }
