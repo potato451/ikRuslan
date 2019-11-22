@@ -27,6 +27,7 @@ size прочитать c клавиатуры. Числа разделить п
  */
 public class TaskB2 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int b = 1;
         int size = sc.nextInt();
@@ -40,9 +41,15 @@ public class TaskB2 {
                 if (i == size) {
                     System.out.println(" ");
                 }
+                c= c +size;
             }
             c++;
         }
+
+
+
+
+
     }
 
 }
