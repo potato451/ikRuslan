@@ -77,7 +77,7 @@ public class Example {
     int minInArray(int[] array) {
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > min)
+            if (array[i] < min)
                 min = array[i];
         }
         return min;
@@ -119,21 +119,21 @@ public class Example {
             int min = array[i];
             int index = i;
             for (int j = i; j < array.length; j++) {
-                if(array[j]<min) {
+                if (array[j] < min) {
                     min = array[j];
                     index = j;
                 }
             }
-            if(i!=index)
-                swap(array,i,index);
+            if (i != index)
+                swap(array, i, index);
         }
         return array;
     }
 
     private void swap(int[] array, int i, int index) {
         int buf = array[i];
-        array[i]=array[index];
-        array[index]=buf;
+        array[i] = array[index];
+        array[index] = buf;
     }
 
 }
