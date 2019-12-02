@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Example {
     //конвертируем строку чисел в масси
-    int[] lineToIntArray(String line) {
-        line = line.trim();//удаляем пробелы
+   public static int[] lineToIntArray(String line) {
+        line = line.trim();//удаляем пробелы 
         String[] elString = line.split(" ");//сплит по пробелу
         int count = elString.length; //узнаем сколько элементов в строчке
         int[] mas = new int[count];//создаем массив целых чисел
@@ -27,11 +27,11 @@ public class Example {
     }
 
     //записываем массив рандомными числами
-    int[] readArrayRandom(int count) {
+    public static int[] readArrayRandom(int count) {
         Random random = new Random();
         int mas[] = new int[count];
         for (int i = 0; i < count; i++) {
-            mas[i] = random.nextInt() / 10;//рандом [0,10)
+            mas[i] = random.nextInt() % 10;//рандом [0,10)
         }
         return mas;
     }
@@ -42,7 +42,7 @@ public class Example {
         }
     }
 
-    void printArrayFor(int[] array) {
+    public static void printArrayFor(int[] array) {
         for (int el : array) {
             System.out.print(el + " ");
         }
