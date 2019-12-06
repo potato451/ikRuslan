@@ -1,9 +1,12 @@
 package ruslan.lesson5;
 
 import java.util.Random;
-import java.util.Scanner;
+        import java.util.Scanner;
 
 public class Example {
+    public static void printArrayFor(int i) {
+    }
+
     //конвертируем строку чисел в масси
     int[] lineToIntArray(String line) {
         line = line.trim();//удаляем пробелы
@@ -17,7 +20,7 @@ public class Example {
     }
 
     //записываем массив вручную числами
-    int[] readArray(int count) {
+    public static int[] readArray(int count) {
         Scanner scanner = new Scanner(System.in);
         int mas[] = new int[count];
         for (int i = 0; i < count; i++) {
@@ -42,9 +45,9 @@ public class Example {
         }
     }
 
-   public static  void printArrayFor(int[] array) {
+    public static  void printArrayFor(int[] array) {
         for (int el : array) {
-            System.out.print(el + " ");
+            System.out.println(el + " ");
         }
     }
 
