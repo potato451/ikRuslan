@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Example {
     //конвертируем строку чисел в масси
-   public static int[] lineToIntArray(String line) {
-        line = line.trim();//удаляем пробелы 
+    public static int[] lineToIntArray(String line) {
+        line = line.trim();//удаляем пробелы
         String[] elString = line.split(" ");//сплит по пробелу
         int count = elString.length; //узнаем сколько элементов в строчке
         int[] mas = new int[count];//создаем массив целых чисел
