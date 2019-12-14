@@ -20,6 +20,8 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
+import ruslan.lesson6.Person;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -40,7 +42,12 @@ public class TaskB {
         }
         System.out.println("a=" + Arrays.toString(a));
         System.out.println("b=" + Arrays.toString(b));
+        Person P1 = new Person(1455534,"gfg");
+        Person p2  =new Person();
+        System.out.println(P1.call);
 
     }
+    Person P1 = new Person(1455534,"gfg");
+    Person p2  =new Person();
 
 }
