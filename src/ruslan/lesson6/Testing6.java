@@ -1,4 +1,4 @@
-package lesson6;
+package ruslan.lesson6;
 
 import org.junit.Test;
 

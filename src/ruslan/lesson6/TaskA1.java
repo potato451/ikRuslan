@@ -1,4 +1,4 @@
-package lesson6;
+package ruslan.lesson6;
 
 /*
 Геттеры и сеттеры для класса Dog
@@ -30,5 +30,11 @@ package lesson6;
 
 
 public class TaskA1 {
+    public static void main(String[] args) {
+        Dog d = new Dog(5," Шарик",3.5,4);
+        Dog f = new Dog(3," Тузик" ,3.6,3);
+        System.out.println(d.name + " " + d.age);
+        System.out.println(f.name + " "  + f.age);
+    }
 
 }
