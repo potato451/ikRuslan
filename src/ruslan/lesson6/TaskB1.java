@@ -1,4 +1,4 @@
-package lesson6;
+package ruslan.lesson6;
 
 /*
 
@@ -26,6 +26,28 @@ double averageAge(Dog[] dogs){.....}; //должен вычислять сред
 */
 
 public class TaskB1 {
+    public static void main(String[] args) {
+        String dogs[] = new String[5];
+        double ae[]= new double [5];
+        DogHelper d = new DogHelper(1," Шарик");
+        DogHelper w = new DogHelper(2," Жучка");
+        DogHelper f = new DogHelper(3," Бобик");
+        DogHelper s = new DogHelper(4," Барбос");
+        DogHelper a = new DogHelper(5," Полкан");
+        dogs[0]=d.name;
+        dogs[1]=w.name;
+        dogs[2]=f.name;
+        dogs[3]=s.name;
+        dogs[4]=a.name;
+        ae[0]=d.age;
+        ae[1]=w.age;
+        ae[2]=f.age;
+        ae[3]=s.age;
+        ae[4]=a.age;
+       DogHelper.printAllNames(dogs);
+        System.out.println();
+        System.out.println(DogHelper.averageAge(ae));
+    }
 
 
 }

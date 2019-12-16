@@ -18,7 +18,23 @@ OCT:42+32=74
 */
 class TaskC2 {
     public static void main(String[] args) {
-        Scanner  sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = a + b;
+        String bina = Integer.toBinaryString(a);
+        String binb = Integer.toBinaryString(b);
+        String binc = Integer.toBinaryString(c);
+        String hexa = Integer.toHexString(a);
+        String hexb = Integer.toHexString(b);
+        String hexc = Integer.toHexString(c);
+        String octa = Integer.toOctalString(a);
+        String octb = Integer.toOctalString(b);
+        String octc = Integer.toOctalString(c);
+        System.out.println("DEC:" + a + "+" + b + "=" + c);
+        System.out.println("BIN:" + bina + "+" + binb + "=" + binc);
+        System.out.println("HEX:" + hexa + "+" + hexb + "=" + hexc);
+        System.out.println("OCT:" + octa + "+" + octb + "=" + octc);
 
     }
 }

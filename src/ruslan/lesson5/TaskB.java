@@ -1,4 +1,4 @@
-package sergey.lesson5;
+package ruslan.lesson5;
 
 /*
 Один большой массив и два маленьких
@@ -20,34 +20,25 @@ b=[11, 22, 33, 44, 55, 66, 77, 88, 99, 0]
 
 */
 
-import ruslan.lesson6.Person;
-
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class TaskB {
     public static void main(String[] args) {
-        int[] m = new int[20];
+        int[] c= new int[20];
+        c = Example.readArray(20);
+//        Example.printArrayFor(c);
         int[] a = new int[10];
         int[] b = new int[10];
-        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < b.length; i++) {
+            a[i] = c[i];
+            b[i] = c[i + 10];
 
-        for (int i = 0; i < 20; i++) {
-            m[i] = sc.nextInt();
         }
+        System.out.println("\na="+ Arrays.toString(a));
+        System.out.println("b="+ Arrays.toString(b));
 
-        for (int i = 0; i < 10; i++) {
-            a[i] = m[i];
-            b[i] = m[i + 10];
-        }
-        System.out.println("a=" + Arrays.toString(a));
-        System.out.println("b=" + Arrays.toString(b));
-        Person P1 = new Person(1455534,"gfg");
-        Person p2  =new Person();
-        System.out.println(P1.call);
 
     }
-    Person P1 = new Person(1455534,"gfg");
-    Person p2  =new Person();
+
 
 }

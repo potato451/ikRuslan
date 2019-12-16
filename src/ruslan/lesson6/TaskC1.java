@@ -1,4 +1,4 @@
-package lesson6;
+package ruslan.lesson6;
 
 /*
 Доработайте класс Dog.
@@ -23,13 +23,20 @@ boolean win(Dog otherDog)
 кличка возраст вес сила
 кличка возраст вес сила
 (всего получается 8 чтений разных данных)
-
+]
 Создайте этих собак, определите победителя с помощью созданного
 в классе Dog метода boolean win(Dog dog).
 Напечатайте кличку победителя.
 */
 
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Dog dog = new Dog(sc.nextInt(),sc.nextLine(),sc.nextDouble(),sc.nextInt());
+        Dog otherdog= new Dog(sc.nextInt(),sc.nextLine(),sc.nextDouble(),sc.nextInt());
+    }
 
 }

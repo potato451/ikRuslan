@@ -44,5 +44,11 @@ public class TaskB2 {
             }
             c++;
         }
+
+
+
+
+
     }
+
 }

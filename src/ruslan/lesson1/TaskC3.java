@@ -34,20 +34,20 @@ import java.util.Scanner;
 
 */
 class TaskC3 {
-    public static void main(String[] args) {
-        getweiht();
+    public static double getWeight(int weight) {
+        double weig=Math.round(3.86/9.81*weight*100);
+        return weig/100;
 
     }
 
-    private static void getweiht() {
+    public static void main(String[] args) {
         System.out.println("Введите вес");
         Scanner sc = new Scanner(System.in);
-        int m = sc.nextInt();
-        double g1 = 9.81;
-        double g2 = 3.86;
-        double f = g2/g1*m;
-        System.out.println(Math.round(f));
+        int weight = sc.nextInt();
+        System.out.println("Вес на мерсе = " +getWeight(weight));
+
     }
+
 
 }
 
