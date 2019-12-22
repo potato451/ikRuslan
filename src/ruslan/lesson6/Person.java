@@ -1,8 +1,19 @@
 package ruslan.lesson6;
 
 public class Person {
-    public int rost = 165;
-    public String call = "NO";
+    private int rost = 165;
+    private String call = "NO";
+
+    public int getRost() {
+        return rost;
+    }
+
+    public void setRost(int vallue) {
+        if (vallue < 40) {
+            System.out.println("Error");
+        } else
+            rost = vallue;
+    }
 
     public Person(int tall) {
         rost = tall;

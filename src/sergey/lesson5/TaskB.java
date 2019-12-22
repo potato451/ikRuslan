@@ -44,7 +44,7 @@ public class TaskB {
         System.out.println("b=" + Arrays.toString(b));
         Person P1 = new Person(1455534,"gfg");
         Person p2  =new Person();
-        System.out.println(P1.call);
+      //  System.out.println(P1.call);
 
     }
     Person P1 = new Person(1455534,"gfg");

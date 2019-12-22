@@ -31,10 +31,14 @@ package ruslan.lesson6;
 
 public class TaskA1 {
     public static void main(String[] args) {
-        Dog d = new Dog(5," Шарик",3.5,4);
-        Dog f = new Dog(3," Тузик" ,3.6,3);
-        System.out.println(d.name + " " + d.age);
-        System.out.println(f.name + " "  + f.age);
+     Dog d1  = new Dog(12,"Шарик",4,3.4);
+     Dog d2 = new Dog(4,"Тузик",4,3.5);
+     d1.setAge(5);
+     d1.setName("Шарик");
+     d2.setAge(3);
+     d2.setName("Тузик");
+        System.out.println(d1.getName() + " " + d1.getAge());
+        System.out.println(d2.getName() + " " + d2.getAge());
     }
 
 }
