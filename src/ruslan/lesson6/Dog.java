@@ -1,22 +1,70 @@
 package ruslan.lesson6;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
+
 public class Dog {
-    private static Object Dog;
-    public int age = 3;
-    public String name = "No";
-    private int weight = 3;
-    private double power = 10.5;
-    public Dog(int _age,String _name,double _power,int _weight){
-        age = _age;
-        name=_name;
-        power = _power;
-        weight = _weight;
+    private double power = 3.4;
+    private int weight = 4;
+
+    public double getPower() {
+        return power;
     }
 
-    public static boolean win(Dog otherDog){
-        boolean other_dog = otherDog.age* 0.2  + 0.3 * otherDog.weight + 0.5 * otherDog.power;
-        return other_dog;
-        double this_Dog = dog.age* 0.2  + 0.3 * dog.weight + 0.5 * dog.power;
-        return this_Dog;
+    public void setPower(double power) {
+        this.power = power;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    private int age = 5;
+    private String name = "NO";
+
+    public Dog(int age, String name, int weight, double power) {
+        setAge(age);
+        setName(name);
+        setPower(power);
+        setWeight(weight);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setAge(int age) {
+        if (age > 15 || age < 0) {
+            System.out.println("Error");
+        }
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public static void toString(Dog d1, Dog d2) {
+        System.out.println("Кличка: " + d1.name + ". Возраст: " + d1.age);
+        System.out.println("Кличка: " + d2.name + ". Возраст: " + d2.age);
+    }
+
+    public static boolean win(Dog dog, Dog otherDog) {
+        boolean win;
+        double averdog = dog.getAge() * 0.2 + 0.3 * dog.getWeight() + 0.5 * dog.getPower();
+        double aveerotherDog = otherDog.getAge() * 0.2 + 0.3 * otherDog.getWeight() + 0.5 * otherDog.getPower();
+        if (aveerotherDog>averdog){
+            win = true;
+        }else
+            win = false;
+        return win;
     }
 }
