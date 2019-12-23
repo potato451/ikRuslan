@@ -70,14 +70,14 @@ public class Dog {
         System.out.println("Кличка: " + d2.name + ". Возраст: " + d2.age);
     }
 
-    public static boolean win(Dog dog, Dog otherDog) {
-        boolean win;
-        double averdog = dog.getAge() * 0.2 + 0.3 * dog.getWeight() + 0.5 * dog.getPower();
-        double aveerotherDog = otherDog.getAge() * 0.2 + 0.3 * otherDog.getWeight() + 0.5 * otherDog.getPower();
-        if (aveerotherDog>averdog){
-            win = true;
-        }else
-            win = false;
-        return win;
+    public boolean win(Dog otherDog) {
+//        boolean win¿;
+        double averdog = this.age * 0.2 + 0.3 * this.weight + 0.5 * this.power;
+        double aveerotherDog = otherDog.age * 0.2 + 0.3 * otherDog.weight + 0.5 * otherDog.power;
+//        if (aveerotherDog>averdog){
+//            return  false;
+//        }else
+//            return true;
+        return averdog > aveerotherDog;
     }
 }
