@@ -34,7 +34,6 @@ public class DogHelper {
             System.out.print(dogs[i] + " ");
 
         }
-
     }
     public static double averageAge(String[] dogs){
         double aver = (dogs.length + dogs.length - 1 + dogs.length -2 +dogs.length-3+dogs.length-4) /dogs.length;

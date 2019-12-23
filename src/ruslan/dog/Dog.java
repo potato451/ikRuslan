@@ -1,11 +1,11 @@
-package ruslan.lesson6;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
+package ruslan.dog;
 
 public class Dog {
     private double power = 3.4;
     private int weight = 4;
+
+    public Dog() {
+    }
 
     public double getPower() {
         return power;
@@ -29,9 +29,6 @@ public class Dog {
     public Dog(int age, String name) {
         this.age = age;
         this.name = name;
-    }
-
-    public Dog() {
     }
 
     public Dog(int age, String name, int weight, double power) {
@@ -58,11 +55,6 @@ public class Dog {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Кличка: " + this.name + ". Возраст: " + this.age;
     }
 
     public static void toString(Dog d1, Dog d2) {

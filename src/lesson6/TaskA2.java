@@ -1,4 +1,4 @@
-package ruslan.lesson6;
+package lesson6;
 
 /*
     toString() для класса Dog
@@ -24,21 +24,10 @@ package ruslan.lesson6;
 
 
 */
-public class  TaskA2 {
+public class TaskA2 {
     public static void main(String[] args) {
-//        Dog d1 = new Dog(5,"No",4,5.4);
-//        Dog d2 = new Dog(3,"No",4,3.3);
-        Dog d1 = new Dog();
-        Dog d2 = new Dog();
-        d1.setName("Шарик");
-        d2.setName("Тузик");
-        d1.setAge(5);
-        d2.setAge(3);
-        d1.toString();
-        d2.toString();
-//        System.out.println(d2);
-        Dog.toString(d1,d2);
-    }
 
+
+    }
 
 }

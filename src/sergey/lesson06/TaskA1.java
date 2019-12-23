@@ -1,4 +1,4 @@
-package ruslan.lesson6;
+package sergey.lesson06;
 
 /*
 Геттеры и сеттеры для класса Dog
@@ -28,19 +28,20 @@ package ruslan.lesson6;
 */
 
 
-
 public class TaskA1 {
     public static void main(String[] args) {
-//     Dog d1  = new Dog(12,"Шарик",4,3.4);
-//     Dog d2 = new Dog(4,"Тузик",4,3.5);
-     Dog d1 = new Dog();
-     Dog d2 = new Dog();
-     d1.setAge(5);
-     d1.setName("Шарик");
-     d2.setAge(3);
-     d2.setName("Тузик");
-        System.out.println(d1.getName() + " " + d1.getAge());
-        System.out.println(d2.getName() + " " + d2.getAge());
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        dog1.setName("Шарик");
+        dog1.setAge(5);
+
+        dog2.setName("Тузик");
+        dog2.setAge(3);
+
+        System.out.println(dog1.getName() + " " + dog1.getAge());
+        System.out.println(dog2.getName() + " " + dog2.getAge());
+
     }
+
 
 }
