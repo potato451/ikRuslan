@@ -1,7 +1,7 @@
 package ruslan.lesson6;
 
 public class DogHelper {
-    private int age = 5;
+       private int age = 5;
     private String name = "NO";
 
     public DogHelper() {
