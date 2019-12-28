@@ -35,8 +35,10 @@ import java.util.Scanner;
 public class TaskC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Dog dog = new Dog(sc.nextInt(), sc.next(), sc.nextInt(), sc.nextDouble());
-        Dog otherDog = new Dog(sc.nextInt(), sc.next(), sc.nextInt(), sc.nextDouble());
+        System.out.println("1:Age,2:Name,3:Weight,4:Power");
+        Dog dog = new Dog(sc.nextInt(),sc.next(),sc.nextInt(),sc.nextDouble());
+        System.out.println("1:Age,2:Name,3:Weight,4:Power");
+        Dog otherDog = new Dog(sc.nextInt(),sc.next(),sc.nextInt(),sc.nextDouble());
 //        dog.setWeight(sc.nextInt());
 //        dog.setPower(sc.nextDouble());
 //        dog.setAge(sc.nextInt());
@@ -47,9 +49,9 @@ public class TaskC1 {
 //        otherDog.setName(sc.next());
 //        dog.win(otherDog);
 //        otherDog.win(dog);
-        if (dog.win(otherDog)) {
+        if (dog.win(dog, otherDog) == true) {
             System.out.println(dog.getName());
-        } else if (otherDog.win(dog)) {
+        } else {
             System.out.println(otherDog.getName());
         }
     }
