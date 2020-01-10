@@ -29,14 +29,17 @@ public class DogHelper {
     }
 
 
-    public static void printAllNames(String[] dogs) {
+    public static void printAllNames(Dog [] dogs) {
         for (int i = 0; i < dogs.length; i++) {
-            System.out.print(dogs[i] + " ");
+            System.out.print(dogs[i].getName() + " ");
 
         }
     }
-    public static double averageAge(String[] dogs){
-        double aver = (dogs.length + dogs.length - 1 + dogs.length -2 +dogs.length-3+dogs.length-4) /dogs.length;
+    public static double averageAge(Dog[] dogs){
+        double aver =0;
+        for (int i = 0; i <dogs.length; i++) {
+           aver =aver + dogs[i].getAge();
+        }
         return aver;
     }
 
