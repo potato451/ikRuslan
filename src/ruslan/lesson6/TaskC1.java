@@ -35,20 +35,24 @@ import java.util.Scanner;
 public class TaskC1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Dog dog = new Dog(3,"l",5,10.9);
-        Dog otherDog = new Dog(3,"l",5,0.9);
-        dog.setWeight(sc.nextInt());
-        dog.setPower(sc.nextDouble());
-        dog.setAge(sc.nextInt());
-        dog.setName(sc.nextLine());
-        otherDog.setWeight(sc.nextInt());
-        otherDog.setPower(sc.nextDouble());
-        otherDog.setAge(sc.nextInt());
-        otherDog.setName(sc.nextLine());
-        if ( Dog.win(dog,otherDog)==true){
-            System.out.println(otherDog.getName());
-        }else{
+        System.out.println("1:Age,2:Name,3:Weight,4:Power");
+        Dog dog = new Dog(sc.nextInt(),sc.next(),sc.nextInt(),sc.nextDouble());
+        System.out.println("1:Age,2:Name,3:Weight,4:Power");
+        Dog otherDog = new Dog(sc.nextInt(),sc.next(),sc.nextInt(),sc.nextDouble());
+//        dog.setWeight(sc.nextInt());
+//        dog.setPower(sc.nextDouble());
+//        dog.setAge(sc.nextInt());
+//        dog.setName(sc.next());
+//        otherDog.setWeight(sc.nextInt());
+//        otherDog.setPower(sc.nextDouble());
+//        otherDog.setAge(sc.nextInt());
+//        otherDog.setName(sc.next());
+//        dog.win(otherDog);
+//        otherDog.win(dog);
+        if (dog.win(dog, otherDog) == true) {
             System.out.println(dog.getName());
+        } else {
+            System.out.println(otherDog.getName());
         }
     }
 
