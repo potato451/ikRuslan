@@ -9,5 +9,7 @@ public class Runner_Customer {
         cust[3]=new Customer(12948,"Gobanov","Moala","Danovich 8","3457908385441315","By 227",2,9);
         cust[4]=new Customer(19544,"Mobanov","Scala","Revolinaya 37","5467934585435375","By 228",3,12);
         Customer.toString(cust);
+
+
     }
 }

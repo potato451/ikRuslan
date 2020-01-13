@@ -89,24 +89,32 @@ public class Book {
         this.type = type;
     }
 
-    public static void toString(Book[] book) {
-        for (int i = 0; i < book.length; i++) {
-            System.out.println(book[i].getAutors());
-            System.out.println(Arrays.toString(book[i].getTitle()));
+
+    public static void bookAutor(String b,Book[] book){
+        for (int i = 0; i <book.length; i++) {
+            if (b.equalsIgnoreCase(book[i].getAutors()))
+                System.out.println(Arrays.toString(book[i].getTitle()));
         }
-        int i = 0;
-        if (book[0].getIsd() == book[1].getIsd() && book[2].getIsd() == book[1].getIsd()) {
-            book[0].isd+= book[0].getIsd()+book[1].getIsd();
-        } else if (book[0].getIsd() == book[1].getIsd()) {
-            book[0].isd += book[1].getIsd();
-        } else if (book[0].getIsd() == book[2].getIsd()) {
-            book[0].isd += book[2].getIsd();
-        } else if (book[1].getIsd() == book[2].getIsd()) {
-            book[1].isd += book[2].getIsd();
-            i++;
-        } else
-            System.out.println("Nothing");
-        if (book[0].isd != book[0].getIsd() || book[1].isd != book[1].getIsd())
-            System.out.println(book[i].getIsd());
+    }
+    public static void bookIsd(Book[] book , String v){
+        for (int i = 0; i <book.length ; i++) {
+            if (v.equalsIgnoreCase(book[i].getIsd()))
+                System.out.println(Arrays.toString(book[i].getTitle()));
+        }
+    }
+    public static void bookYeaer(Book[] book ,int m){
+        for (int i = 0; i <book.length; i++) {
+            if (m<book[i].getYear()){
+                System.out.println(Arrays.toString(book[i].getTitle()));
+            }
+
+
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return "ID"+String.valueOf(this.getId())+"ГОД"+String.valueOf(this.getYear());
     }
 }
