@@ -64,6 +64,7 @@ public class Dog {
     @Override
     public String toString() {
         return "Кличка: " + this.name + ". Возраст: " + this.age;
+
     }
 
     public static void toString(Dog d1, Dog d2) {
