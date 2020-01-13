@@ -10,7 +10,8 @@ public class Triangel {
         this.c =c;
     }
     public  double Squere(){
-        double S=Math.sqrt(a)
+        double S=Math.sqrt(a);
+        return S;
     }
 
 }

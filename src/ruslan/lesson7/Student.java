@@ -1,6 +1,6 @@
 package ruslan.lesson7;
 
-import ruslan.lesson6.Dog;
+//import ruslan.lesson6.Dog;
 
 public class Student {
     private String name="NO";

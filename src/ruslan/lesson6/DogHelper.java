@@ -34,6 +34,7 @@ public class DogHelper {
             System.out.print(dogs[i].getName() + " ");
 
         }
+        System.out.println();
     }
     public static double averageAge(Dog[] dogs){
         double aver =0;
@@ -42,6 +43,5 @@ public class DogHelper {
         }
         return aver;
     }
-
 }
 
