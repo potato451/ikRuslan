@@ -7,6 +7,15 @@ public class Controller {
     Scanner sc = new Scanner(System.in);
 
     public void singIn() {
+        System.out.println("login");
+        String logi =sc.next();
+        System.out.println("password");
+        String pass =sc.next();
+        if (AllUsers.checkAccount(logi,pass) ==true){
+            System.out.println("You are just singIn");
+        }else{
+            System.out.println("Wrong login or password");
+        }
 
     }
 
