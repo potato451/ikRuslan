@@ -13,6 +13,7 @@ public class Runner {
             System.out.println("1 - войти");
             System.out.println("2 - зарегистрироваться");
             System.out.println("3 - вывести всех");
+            System.out.println("4 - выйти");
             System.out.println("0 - завершить");
             int answer = scanner.nextInt();
             if (answer == 1)
@@ -21,6 +22,8 @@ public class Runner {
                 controller.signUp();
             else if (answer == 3)
                 controller.printAllUsers();
+            else if (answer == 4)
+                controller.exit();
             else if (answer == 0)
                 break;
             else

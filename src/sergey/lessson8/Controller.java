@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Controller {
     Scanner scanner = new Scanner(System.in);
 
+    boolean flag = false;
+    String currentUser;
 
     public void signUp() {
         System.out.println("Введите логин");
@@ -25,6 +27,8 @@ public class Controller {
         String password = scanner.next();
         if (AllUsers.chekUserPassvord(login, password)) {
             System.out.println("Velcome, " + login);
+            currentUser = login;
+            flag = true;
         } else
             System.out.println("Неверное имя пользователя или пароль!!!");
     }
@@ -35,5 +39,14 @@ public class Controller {
 
     public void printAllUsers() {
         AllUsers.printUsers();
+    }
+
+    public void exit() {
+        if (flag) {
+            System.out.println("Выход из " + currentUser + " выполнен");
+            flag = false;
+        }
+        else
+            System.out.println("Перед выходом нужно войти в учетку");
     }
 }
