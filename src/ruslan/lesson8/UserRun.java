@@ -11,7 +11,8 @@ public class UserRun {
             System.out.println("Choose");
             System.out.println("1 - singIn");
             System.out.println("2- reg");
-            System.out.println("4 printAll");
+            System.out.println("3 printAll");
+            System.out.println("4- singOut");
             System.out.println("0 - Exit");
             int check = sc.nextInt();
             if (check == 1) {
@@ -20,8 +21,12 @@ public class UserRun {
                 cont.singUp();
             } else if (check == 3) {
                 cont.printAll();
+            } else if (check == 4) {
+                cont.exit();
             } else if (check == 0) {
                 break;
+            } else {
+                System.out.println("error ecept");
             }
         }
     }
