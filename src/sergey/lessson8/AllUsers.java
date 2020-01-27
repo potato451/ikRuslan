@@ -2,6 +2,7 @@ package sergey.lessson8;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class AllUsers {
     private AllUsers() {
@@ -9,6 +10,7 @@ public class AllUsers {
 
     static ArrayList<String> users = new ArrayList<>(Arrays.asList("admin"));
     static ArrayList<String> passwords = new ArrayList<>(Arrays.asList("admin"));
+
 
 
 
@@ -23,6 +25,7 @@ public class AllUsers {
         users.add(user.name);
         passwords.add(user.password);
         System.out.println("Пользователь " + user.name + " успешно добавлен");
+        ProfileUsers.newUser();
     }
 
     public static boolean chekUserPassvord(String login, String password) {
