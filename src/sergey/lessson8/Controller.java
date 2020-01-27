@@ -6,6 +6,8 @@ public class Controller {
     Scanner scanner = new Scanner(System.in);
 
 
+
+
     boolean flag = false;
     String currentUser;
     User userCurret;
@@ -36,8 +38,8 @@ public class Controller {
                 System.out.println("Velcome, " + login);
                 currentUser = login;
                 flag = true;
-//                profile();
-                profile2(userCurret);
+                profile();
+//                profile2(userCurret);
             } else
                 System.out.println("Неверное имя пользователя или пароль!!!");
         } else
@@ -77,7 +79,8 @@ public class Controller {
         System.out.println("3 -- Выйти из" + userCurret.getName());
         int answer = scanner.nextInt();
         if (answer == 1) {
-            updateProfile2(user);
+            updateProfile();
+//            updateProfile2(user);
         } else if (answer == 2) {
             System.out.println("Выход из профиля осуществлен");
         } else if (answer == 3) {
