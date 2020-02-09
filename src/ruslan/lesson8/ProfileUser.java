@@ -60,7 +60,7 @@ public class ProfileUser {
         infoUsers.set(AllUsers.v,user).setLast_name(sc.next());
         System.out.println("birthday");
         infoUsers.set(AllUsers.v,user).setBirthday(sc.next());
-        System.out.println("claver");
+        System.out.println("education");
         infoUsers.set(AllUsers.v,user).setClaver(sc.next());
         infoUsers.set(AllUsers.v,user).setF(true);
         return user;
@@ -77,6 +77,7 @@ public class ProfileUser {
         infoUsers.set(AllUsers.v, user).setBirthday(sc.next());
         System.out.println("claver");
         infoUsers.set(AllUsers.v, user).setClaver(sc.next());
+        infoUsers.set(AllUsers.v,user).setF(true);
         return user;
     }
 }
