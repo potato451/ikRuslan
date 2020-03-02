@@ -15,7 +15,7 @@ public class Runner {
         int i = 0;
         int tries = 3;
         while (tries != 0) {
-            Wizard wiz = new Wizard("Ashot", 1, 2.0, 3.5, 130);
+            Wizard wiz = new Wizard("Ashot", 1, 2.0, 3, 130);
             Archer arch = new Archer("Mark", 1, 2.5, 3, 100);
             Voin voin = new Voin("Ilya", 1, 3.5, 2, 90);
             System.out.println("Choose your fighter:WIZARD(w),ARCHER(a),VOIN(v)");
